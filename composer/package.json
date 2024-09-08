@@ -1,0 +1,23 @@
+{
+  "name": "audio-processing-service",
+  "version": "1.0.0",
+  "description": "A service to process audio files and create blog posts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "minio": "^7.0.32",
+    "assemblyai": "^4.7.0",
+    "openai": "^4.57.3",
+    "@tryghost/admin-api": "^1.13.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4",
+    "ts-node": "^10.9.1"
+  }
+}
